@@ -1,0 +1,35 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="IPLProject.SiteMaster" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>IPL Ticket Booking System</title>
+    <link href="Styles/Style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="header-bar">
+            <h2 style="margin:0;">IPL TICKET BOOKING SYSTEM</h2>
+            <div>
+                Welcome, <strong><asp:Label ID="lblUser" runat="server"></asp:Label></strong>
+                (<asp:Label ID="lblRole" runat="server"></asp:Label>)
+                <asp:Button ID="btnLogout" runat="server" Text="Logout" CssClass="btn-ash" OnClick="btnLogout_Click" CausesValidation="false" style="margin-left:12px;" />
+            </div>
+        </div>
+        <div class="nav-tabs">
+            <asp:Panel ID="pnlAdminTabs" runat="server" Visible="false">
+                <a href="Match.aspx">1. Matches</a>
+                <a href="StandMaster.aspx">2. Stands</a>
+                <a href="SeatMaster.aspx">3. Seats</a>
+            </asp:Panel>
+            <asp:Panel ID="pnlUserTabs" runat="server" Visible="false">
+                <a href="Customer.aspx">1. Customer Form</a>
+                <a href="Booking.aspx">2. Booking Form</a>
+            </asp:Panel>
+        </div>
+        <div class="container">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

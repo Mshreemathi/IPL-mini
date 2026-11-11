@@ -1,0 +1,137 @@
+body {
+    background-color: #EFF6FF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1E3A8A;
+    margin: 0;
+    padding: 0;
+}
+
+.header-bar {
+    background-color: #1E40AF;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-tabs {
+    background-color: #DBEAFE;
+    padding: 10px 30px;
+    border-bottom: 2px solid #BFDBFE;
+}
+
+.nav-tabs a {
+    text-decoration: none;
+    color: #1E40AF;
+    font-weight: bold;
+    padding: 6px 14px;
+    border-radius: 4px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.nav-tabs a:hover {
+    background-color: #3B82F6;
+    color: #FFFFFF;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 25px auto;
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(30,58,138,0.1);
+}
+
+.form-box {
+    background: #F8FAFC;
+    padding: 18px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border: 1px solid #BFDBFE;
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin-top: 8px;
+}
+
+input[type="text"], input[type="password"], select {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #93C5FD;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    color: #1E3A8A;
+    font-size: 13px;
+}
+
+.btn-green {
+    background-color: #16A34A;
+    color: #FFFFFF;
+    border: none;
+    padding: 7px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.btn-blue {
+    background-color: #2563EB;
+    color: #FFFFFF;
+    border: none;
+    padding: 7px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.btn-red {
+    background-color: #DC2626;
+    color: #FFFFFF;
+    border: none;
+    padding: 7px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.btn-ash {
+    background-color: #6B7280;
+    color: #FFFFFF;
+    border: none;
+    padding: 7px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.grid-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.grid-table th {
+    background-color: #1E40AF;
+    color: white;
+    text-align: left;
+    padding: 8px;
+    font-size: 13px;
+}
+
+.grid-table td {
+    padding: 8px;
+    border-bottom: 1px solid #DBEAFE;
+    font-size: 13px;
+}
